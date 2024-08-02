@@ -1,0 +1,128 @@
+/* sm */
+@media (min-width:640px) {}
+/* md */
+@media (min-width:768px) {
+    .container {
+        width: 85%;
+    }
+    /* ===========header========== */
+    .header .btn-group {
+        flex-direction: row;
+    }
+    /* ===========chefs========== */
+    .chefs-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .chefs-cards .card {
+        width: calc(50% - 1.875rem);
+    }
+    /* ===========gallery========== */
+    .gallery .gallery-photos{
+        columns: 2;
+    }
+    /* ===========contact========== */
+    .contact .details {
+        flex-direction: row;
+    }
+    .contact .details-box {
+        width: calc(50% - 0.9375rem);
+    }
+    /* ===========footer========== */
+    footer .container {
+        flex-flow: row wrap;
+    }
+    footer .about {
+        order: 1;
+        width: calc(50% - 1.25rem);
+    }
+    footer .contact-details {
+        order: 2;
+        width: calc(50% - 1.25rem);
+    }
+    footer .subscription {
+        order: 3;
+    }
+}
+/* l */
+@media (min-width:1024px) {
+    .container {
+        width: 80%;
+    }
+    /* ===========nav========== */
+    .nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        visibility: inherit;
+        height: 100%;
+    }
+    .nav li {
+        align-content: center;
+    padding: 5px 10px;
+    }
+    .nav .list-label{
+        visibility: hidden;
+    }
+    /* ===========header========== */
+    .header .container {
+        flex-flow: row;
+    }
+    .header .header-img {
+        order: 2;
+        width: 40%;
+    }
+    .header .header-content {
+        width: 40%;
+    }
+    .header .btn-group {
+        flex-direction: row;
+    }
+    .header .btn-group .btn1 {
+        border-top-left-radius: 0vh;
+    }
+    /* ===========chefs========== */
+    .chefs-cards {
+        justify-content: space-evenly;
+    }
+    .chefs-cards .card {
+        width: calc(33% - 1.875rem);
+    }
+    /* ===========gallery========== */
+    .gallery .gallery-photos{
+        columns: 3;
+    }
+    /* ===========contact========== */
+    .contact .details {
+        flex-direction: row;
+    }
+    .contact .details-box {
+        width: calc(50% - 0.9375rem);
+    }
+    .contact .inputs input {
+        width: calc(50% - 0.9375rem);
+    }
+    .contact .inputs {
+        flex-direction: row;
+    }
+    /* ===========footer========== */
+    footer .container {
+        flex-flow: row wrap;
+    }
+    footer .about {
+        order: 1;
+        width: calc(25% - 1.25rem);
+    }
+    footer .contact-details {
+        order: 3;
+        width: calc(25% - 1.25rem);
+    }
+    footer .subscription {
+        order: 2;
+        width: calc(50% - 1.25rem);
+    }
+}
+/* xl */
+@media (min-width:1280px) {}
+/* xxl */
+@media (min-width:1536px) {}
